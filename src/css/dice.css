@@ -32,19 +32,32 @@ body {
 
 
 .stats {
-    display: block;
+    align-items: flex-end;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
 }
 
 .stats__item {
-
+    background: #dff;
+    border: 1px solid #ccc;
+    flex: 0 1 20px;
+    padding: 0 5px;
+    position: relative;
 }
 
-.stats__item__number {
-
+.stats__item__roll {
+    bottom: -30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .stats__item__percentage {
-
+    font-size: 14px;
 }
 
 

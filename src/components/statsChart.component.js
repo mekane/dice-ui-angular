@@ -3,10 +3,11 @@ angular.module('diceapp')
         bindings: {
             'stats': '<'
         },
+        //height of thing 
         template: [
             '<ul class="stats">',
-            '  <li class="stats__item" ng-repeat="(roll, percentage) in $ctrl.stats">',
-            '    <span class="stats__item__roll">{{ roll }}:</span>',
+            '  <li class="stats__item" ng-repeat="(roll, percentage) in $ctrl.stats" style="height: {{ percentage * 10 }}px;">',
+            '    <span class="stats__item__roll">{{ roll }}</span>',
             '    <span class="stats__item__percentage">{{ percentage }}%</span>',
             '  </li>',
             '</ul>'
