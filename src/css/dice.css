@@ -31,6 +31,23 @@ body {
 }
 
 
+.stats {
+    display: block;
+}
+
+.stats__item {
+
+}
+
+.stats__item__number {
+
+}
+
+.stats__item__percentage {
+
+}
+
+
 .dice-input {
     display: inline-block;
 }
