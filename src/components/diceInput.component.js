@@ -18,7 +18,7 @@ angular.module('diceapp')
         },
         template: [
             '<div class="dice-input">',
-            '  <input type="text" name="number" ng-model="$ctrl.number">',
+            '  <input class="dice-input__number" type="text" name="number" ng-model="$ctrl.number">',
             '  <span class="dice-input__d">d</span>',
             '  <span class="dice-input__size">{{ $ctrl.size }}</span>',
             '  <div class="dice-input__controls">',
