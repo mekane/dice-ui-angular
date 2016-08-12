@@ -4,11 +4,11 @@ angular.module('diceapp')
             var ctrl = this;
 
             ctrl.diceConfig = [
-                {number: 1, size: 4},
-                {number: 1, size: 6},
-                {number: 1, size: 8},
-                {number: 1, size: 10},
-                {number: 1, size: 12}
+                {number: 0, size: 4},
+                {number: 0, size: 6},
+                {number: 0, size: 8},
+                {number: 0, size: 10},
+                {number: 0, size: 12}
             ];
 
             ctrl.modifier = 0;

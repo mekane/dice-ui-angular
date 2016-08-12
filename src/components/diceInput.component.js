@@ -12,7 +12,7 @@ angular.module('diceapp')
             };
 
             ctrl.subtractOne = function subtractOne() {
-                if ( ctrl.number > 1 )
+                if ( ctrl.number > 0 )
                     ctrl.number--;
             };
         },
