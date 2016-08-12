@@ -26,11 +26,6 @@ angular.module('diceapp')
             '  <input class="dice-form__modifier" type="text" ng-model="$ctrl.modifier">',
             '  <button class="dice-form__button dice-form__roll" type="button" ng-click="$ctrl.roll()">Roll!</button>',
             '</form>',
-            '<ul class="stats" ng-if="$ctrl.stats">',
-            '  <li class="stats__item" ng-repeat="(roll, percentage) in $ctrl.stats">' +
-            '    <span class="stats__item__roll">{{ roll }}:</span>',
-            '    <span class="stats__item__percentage">{{ percentage }}%</span>',
-            '  </li>',
-            '</ul>'
+            '<stats-chart ng-if="$ctrl.stats" stats="$ctrl.stats"></stats-chart>'
         ].join('')
     });
