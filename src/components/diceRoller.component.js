@@ -16,7 +16,18 @@ angular.module('diceapp')
             ctrl.roll = function () {
                 var diceToRoll = window.dice.convertDiceToListOfDiceSizes(ctrl.diceConfig);
                 var rolls = window.dice.computeRollsForDice(diceToRoll);
-                ctrl.stats = window.dice.getPercentageStatsFromTotals(window.dice.combineTotals(rolls));
+                var stats = window.dice.getPercentageStatsFromTotals(window.dice.combineTotals(rolls));
+                if ( ctrl.modifier ) {
+                    var modifiedStats = {};
+                    Object.keys(stats).forEach(function (key) {
+                        var newKey = (1 * key) + (1 * ctrl.modifier);
+                        modifiedStats[newKey] = stats[key];
+                    });
+                    ctrl.stats = modifiedStats;
+                }
+                else {
+                    ctrl.stats = stats;
+                }
             }
         },
         template: [

@@ -50,7 +50,8 @@ body {
 }
 
 .stats__item__roll {
-    bottom: -30px;
+    bottom: -40px;
+    left: 0;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -58,6 +59,8 @@ body {
 
 .stats__item__percentage {
     font-size: 14px;
+    text-align: center;
+    width: 100%;
 }
 
 
