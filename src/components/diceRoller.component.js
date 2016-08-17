@@ -35,7 +35,7 @@ angular.module('diceapp')
             '  <dice-input ng-repeat="die in $ctrl.diceConfig" number="die.number" size="die.size"></dice-input>',
             '  <span class="dice-form__plus">+</span>',
             '  <input class="dice-form__modifier" type="text" ng-model="$ctrl.modifier">',
-            '  <button class="dice-form__button dice-form__roll" type="button" ng-click="$ctrl.roll()">Roll!</button>',
+            '  <button class="dice-form__roll-button" type="button" ng-click="$ctrl.roll()">Roll!</button>',
             '</form>',
             '<stats-chart ng-if="$ctrl.stats" stats="$ctrl.stats"></stats-chart>'
         ].join('')
