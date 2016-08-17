@@ -22,8 +22,8 @@ angular.module('diceapp')
             '  <span class="dice-input__d">d</span>',
             '  <span class="dice-input__size">{{ $ctrl.size }}</span>',
             '  <div class="dice-input__controls">',
-            '    <button type="button" class="dice-input__controls__button dice-input__controls__button-less" ng-click="$ctrl.subtractOne()">-</button>',
-            '    <button type="button" class="dice-input__controls__button dice-input__controls__button-more" ng-click="$ctrl.addOne()">+</button>',
+            '    <button type="button" class="dice-input__button" ng-click="$ctrl.subtractOne()">-</button>',
+            '    <button type="button" class="dice-input__button" ng-click="$ctrl.addOne()">+</button>',
             '  </div>',
             '</div>'
         ].join('')
